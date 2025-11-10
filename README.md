@@ -2,15 +2,25 @@
 
 A simple and super elegant fractal viewer. Click to zoom, drag to move about.
 
-## Running it
+## Getting started
 
-Just open `index.html` in your browser. That's it.
-
-Or chuck it on Vercel if you fancy:
+The viewer now lives inside a lightweight Next.js app so we can drop in Vercel
+Analytics. Run it locally with:
 
 ```bash
-vercel --prod
+npm install
+npm run dev
 ```
+
+Create a production build and preview it with:
+
+```bash
+npm run build
+npm run start
+```
+
+Deploying to Vercel (`vercel --prod`) automatically wires up the
+`<Analytics />` component we mount from `@vercel/analytics/next`.
 
 ## What it does
 
